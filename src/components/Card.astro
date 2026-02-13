@@ -1,0 +1,20 @@
+---
+import EBadge from "./EBadge.astro";
+
+const { title, img, shape, explicit } = Astro.props;
+---
+
+<article>
+  <img class={shape} src={img} alt="" />
+  <h3>{title}</h3>
+  <p>
+    {explicit && <EBadge />}
+    Subtitle
+  </p>
+</article>
+
+<style>
+  .round {
+    border-radius: 999px;
+  }
+</style>

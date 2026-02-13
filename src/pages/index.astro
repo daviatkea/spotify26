@@ -1,17 +1,101 @@
 ---
-
+import MainLayout from "../layouts/MainLayout.astro";
+import Card from "../components/Card.astro";
+import Section from "../components/Section.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout>
+  <h1>Virker det?</h1>
+
+  <Section title="Artists" link="/artists">
+    <Card title="Billede virker" img="/images/album-13.png" shape="round" />
+    <Card
+      title="Billede virker ikke"
+      img="/public/images/album-13.png"
+      shape="round"
+    />
+    <Card
+      title="Peter 3"
+      img="https://via.assets.so/album.png?id=3&q=95&w=360&h=360&fit=fill"
+      shape="round"
+    />
+    <Card
+      title="Peter 4"
+      img="https://via.assets.so/album.png?id=4&q=95&w=360&h=360&fit=fill"
+      shape="round"
+    />
+    <Card
+      title="Peter 5"
+      img="https://via.assets.so/album.png?id=5&q=95&w=360&h=360&fit=fill"
+      shape="round"
+    />
+  </Section>
+  <Section title="Albums" link="/albums">
+    <Card
+      title="Peter"
+      img="https://via.assets.so/album.png?id=1&q=95&w=360&h=360&fit=fill"
+      explicit
+    />
+    <Card
+      title="Peter 2"
+      img="https://via.assets.so/album.png?id=2&q=95&w=360&h=360&fit=fill"
+    />
+    <Card
+      title="Peter 3"
+      img="https://via.assets.so/album.png?id=3&q=95&w=360&h=360&fit=fill"
+      explicit={true}
+    />
+    <Card
+      title="Peter 4"
+      img="https://via.assets.so/album.png?id=4&q=95&w=360&h=360&fit=fill"
+    />
+    <Card
+      title="Peter 5"
+      img="https://via.assets.so/album.png?id=5&q=95&w=360&h=360&fit=fill"
+    />
+  </Section>
+  <Section title="Albums" link="/albums">
+    <Card
+      title="Peter"
+      img="https://via.assets.so/album.png?id=1&q=95&w=360&h=360&fit=fill"
+    />
+    <Card
+      title="Peter 2"
+      img="https://via.assets.so/album.png?id=2&q=95&w=360&h=360&fit=fill"
+    />
+    <Card
+      title="Peter 3"
+      img="https://via.assets.so/album.png?id=3&q=95&w=360&h=360&fit=fill"
+    />
+    <Card
+      title="Peter 4"
+      img="https://via.assets.so/album.png?id=4&q=95&w=360&h=360&fit=fill"
+    />
+    <Card
+      title="Peter 5"
+      img="https://via.assets.so/album.png?id=5&q=95&w=360&h=360&fit=fill"
+    />
+  </Section>
+  <Section title="Albums" link="/albums">
+    <Card
+      title="Peter"
+      img="https://via.assets.so/album.png?id=1&q=95&w=360&h=360&fit=fill"
+    />
+    <Card
+      title="Peter 2"
+      img="https://via.assets.so/album.png?id=2&q=95&w=360&h=360&fit=fill"
+    />
+    <Card
+      title="Peter 3"
+      img="https://via.assets.so/album.png?id=3&q=95&w=360&h=360&fit=fill"
+    />
+    <Card
+      title="Peter 4"
+      img="https://via.assets.so/album.png?id=4&q=95&w=360&h=360&fit=fill"
+    />
+    <Card
+      title="Peter 5"
+      img="https://via.assets.so/album.png?id=5&q=95&w=360&h=360&fit=fill"
+    />
+  </Section>
+</MainLayout>
